@@ -4,6 +4,7 @@
 
 /* Variables */
 :root{
+    --color-0: #121311;
     --color-1: #2c3531;
     --color-2: #116466;
     --color-3: #d0b08c;
@@ -11,9 +12,18 @@
     --color-5: #d1e8e2;
 }
 
+html{
+    scroll-behavior: smooth;
+} 
+
+.bottom-center { 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+} 
 
 header {
-    position: fixed;
+    position: relative;
     background-color: black;
     height: 100vh;
     min-height: 25rem;
@@ -54,9 +64,17 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
     header {
-        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+        background: url('img/bg.jpg') black no-repeat center center scroll;
     }
     header video {
     display: none;
     }   
+}
+
+.bg-color-1 {
+    background: transparent !important;
+}
+
+.white_icon{
+    color: #FFF;
 }
